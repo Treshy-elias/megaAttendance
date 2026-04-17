@@ -1,5 +1,142 @@
 @import url('config.css');
+@import url('navbar.css');
 
-h1 {
-    color: var(--primary-color);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--secondary-color);
+}
+
+.hero {
+  background: white;
+  width: 85%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  border: 3px solid var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  color: var(--primary-color);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: var(--secondary-color);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 18px;
+  margin: 5px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2f1f3f;
+}
+
+.btn-secondary:hover {
+  background: #555555;
+}
+
+.features {
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  gap: 15px;
+}
+
+.feature-box {
+  background: white;
+  width: 33.3%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid var(--secondary-color);
+  text-align: center;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+
+.feature-box i {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.feature-box h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.feature-box p {
+  font-size: 14px;
+  color: var(--secondary-color);
+  line-height: 20px;
+}
+
+.why {
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  gap: 15px;
+  background-color: white;
+  padding: 20px;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.left-side {
+  width: 50%;
+}
+
+.left-side h2 {
+  color: var(--primary-color);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.right-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.right-side i {
+  font-size: 200px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
 }
