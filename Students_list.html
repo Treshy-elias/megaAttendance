@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIWES Attendance - Student List</title>
+   <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/students_list.css">
+</head>
+
+<body>
+   
+    <div class="container">
+         <nav class="navbar">
+
+        <div class="logo">
+            SIWES<span>Attendance</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="students_list.html">Students-List</a>
+            <a href="profile.html">Profile</a>
+            <a href="edit_profile.html">Edit Profile</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <div class="auth-buttons">
+            <a href="login.html" class="login">Login</a>
+            <a href="register.html" class="register">Register</a>
+        </div>
+
+    </nav>
+    
+
+        <section class="summary-cards">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p class="number">20</p>
+            </div>
+            <div class="card">
+                <h3>Present</h3>
+                <p class="number">12</p>
+            </div>
+            <div class="card">
+                <h3>Absent</h3>
+                <p class="number">8</p>
+            </div>
+        </section>
+
+        <section class="table-controls">
+            <select class="filter-select">
+                <option value="all">All Students</option>
+                <option value="present">Present</option>
+                <option value="absent">Absent</option>
+            </select>
+        </section>
+
+        <section class="table-container">
+            <table class="student-table">
+                <thead>
+                    <tr>
+                        <th>Matric No.</th>
+                        <th>Full Name</th>
+                        <th>Department</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>cmp2307625</td>
+                        <td>Wisdom Udhedhe</td>
+                        <td>Software Engineering</td>
+                        <td>March 24, 2026</td>
+                        <td><span class="badge badge-present">Present</span></td>
+                    </tr>
+                    <tr>
+                        <td>cmp2307611</td>
+                        <td>Uzoma chimere </td>
+                        <td>Software Engineering</td>
+                        <td>March 24, 2026</td>
+                        <td><span class="badge badge-present">Present</span></td>
+                    </tr>
+                    <tr>
+                        <td>cmp2307621</td>
+                        <td>Anthony Ruth</td>
+                        <td>Software Engineering</td>
+                        <td>March 24, 2026</td>
+                        <td><span class="badge badge-absent">Absent</span></td>
+                    </tr>
+                    <tr>
+                        <td>cmp2307619</td>
+                        <td>Macaulay Akpughene </td>
+                        <td>Software Engineering</td>
+                        <td>March 24, 2026</td>
+                        <td><span class="badge badge-present">Present</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+</body>
+
+</html>
