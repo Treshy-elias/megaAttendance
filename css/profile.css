@@ -38,6 +38,13 @@
   text-decoration: none;
 }
 
+.edit-btn i{
+  margin: 5px;
+  color: white;
+  font-size: 14px;
+
+}
+
 .profile-box {
   background: white;
   border-radius: 12px;
