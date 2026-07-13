@@ -1,25 +1,24 @@
 <?php
-
 include("../database/Connection.php");
+include("../traits/StudentTrait.php");
 
-class Student extends connection
+class Student extends Connection
 {
     use StudentTrait;
 
-    public function register($name, $department, $email)
+    public function register(string $name, string $department, string $email)
     {
         if (!$this->isValidEmail($email)) {
             return "Invalid Email";
         }
 
-        $studentCode = $this->generateStudentCode();
 
         $name = $this->formatStudentName($name);
 
         $sql = "INSERT INTO students(student_id,name,department,email)
                 VALUES(?,?,?,?)";
 
-        $stmt = $this->conn->prepare($sql);
+        $stmt = $this->con->prepare($sql);
 
         $stmt->bind_param(
             "ssss",
