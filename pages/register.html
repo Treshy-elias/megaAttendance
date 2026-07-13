@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="/css/register.css" />
-  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/register.css" />
+  <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
 
   <title>Register Your Account</title>
   <!-- SEO Meta Tags -->
@@ -41,10 +41,10 @@
           Register Your Account
         </h2>
 
-        <img src="/images/logo-dark.png" alt="" class="img-fluid mw-100">
+        <img src="../assets/images/logo-dark.png" alt="" class="img-fluid mw-100">
       </div>
 
-      <form class="registration-form d-flex flex-column" method="POST" action="backend/register.php">
+      <form class="registration-form d-flex flex-column" method="POST" action="../classworks/backend/register.php">
 
         <div class="info mb-3 form-floating">
           <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full Name" required>
@@ -102,7 +102,7 @@
     // Load Departments
     const deptSelect = document.getElementById("dept");
 
-    fetch("./backend/get_departments.php")
+    fetch("../classworks/backend/get_departments.php")
       .then(response => response.json())
       .then(departments => {
         departments.forEach(dept => {
@@ -116,7 +116,7 @@
     // Load Faculties
     const facultySelect = document.getElementById("faculty");
 
-    fetch("./backend/get_faculties.php")
+    fetch("../classworks/backend/get_faculties.php")
       .then(response => response.json())
       .then(faculties => {
         faculties.forEach(faculty => {

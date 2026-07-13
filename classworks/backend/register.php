@@ -26,7 +26,8 @@ if (
 
 echo "<script>
     alert('Registration successful');
-    window.location.href = '../login.html';
+    window.location.href = '../../pages/index.html';
 </script>";
+exit()
 
 ?>
