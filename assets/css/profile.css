@@ -6,15 +6,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--primary-color);
 }
 
 .container {
   background-color: whitesmoke;
+  color: var(--primary-color);
 }
 
 .bg-pri {
   background-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .m-name {
@@ -36,6 +37,7 @@
 
   .m-name {
     font-size: 1.5rem;
+    color: var(--primary-color);
   }
 }
 
@@ -46,75 +48,6 @@
   }
 }
 
-<<<<<<< HEAD
-/* i made the image responsive for tablet and larger devices */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .p-img {
-    max-width: 110px;
-  }
-}
-
-.footer-d {
-  display: flex;
-  padding: 20px;
-  background-color: var(--primary-color);
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.img-f {
-  height: 80px;
-}
-
-.footer-d1 {
-  display: flex;
-  justify-content: space-between;
-  height: 30px;
-  margin-bottom: 5px;
-}
-
-.footer-d1 a {
-  margin-right: 20px;
-  color: white
-}
-
-.footer-d2 {
-  height: 30px;
-  color: white
-}
-
-.footer-d2 p {
-  color: white
-}
-
-.footer-d2 span {
-  color: blue;
-  margin-right: 5px
-}
-
-.footer-last {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 5px 5px 5px;
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer-space {
-  width: 200px;
-  height: 100px;
-}
-
-.footer-space p {
-  color: white;
-  margin-bottom: 20px;
-  ;
-=======
 .profile-div h3 {
   font-size: 30px;
   color: white
@@ -157,5 +90,4 @@
 .label {
   font-size: 12px;
   color: gray;
->>>>>>> 161b297e53327b41d9b64f3d61da8adfd4788fb3
 }

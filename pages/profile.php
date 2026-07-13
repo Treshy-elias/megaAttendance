@@ -1,22 +1,21 @@
 <?php
-include "php/students_data.php";
+include "../php/students_data.php";
+global $datas;
 
-// username comes from POST
 $username = $_POST['username'] ?? null;
 
 $user = null;
 
-// search user in array
 foreach ($datas as $student) {
-    if ($student['username'] === $username) {
-        $user = $student;
-        break;
-    }
+  if ($student['username'] === $username) {
+    $user = $student;
+    break;
+  }
 }
 
 if (!$user) {
-    echo "<h3 style='text-align:center;margin-top:50px;'>User not found or invalid access</h3>";
-    exit;
+  echo "<h3 style='text-align:center;margin-top:50px;'>User not found or invalid access</h3>";
+  exit;
 }
 ?>
 
@@ -28,9 +27,9 @@ if (!$user) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile Page</title>
 
-  <link rel="stylesheet" href="./bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="./fontawesome/css/all.css">
-  <link rel="stylesheet" href="./css/profile.css">
+  <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../assets/css/profile.css">
 </head>
 
 <body>
@@ -38,7 +37,7 @@ if (!$user) {
   <nav class="navbar py-3 px-5">
 
     <div class="logo">
-      <img src="./images/logo-dark.png" alt="logo" />
+      <img src="../assets/images/logo-dark.png" alt="logo" />
     </div>
 
     <div class="nav-links">
@@ -66,7 +65,6 @@ if (!$user) {
       </div>
     </div>
 
-    <!-- PROFILE HEADER -->
     <div class="row pt-3 pb-3 bg-pri align-items-center rounded">
 
       <div class="col-3 col-sm-2 col-lg-1">
@@ -81,7 +79,6 @@ if (!$user) {
 
     </div>
 
-    <!-- BASIC INFO -->
     <div class="row bg-white pb-3 rounded mb-3">
 
       <div class="col-12 col-sm-4 col-md-3 offset-sm-2 offset-md-1 pt-2">
@@ -93,7 +90,6 @@ if (!$user) {
 
   </div>
 
-  <!-- DETAILS -->
   <div class="container mb-3">
     <div class="bg-light p-3 rounded">
 
@@ -144,6 +140,31 @@ if (!$user) {
 
     </div>
   </div>
+  <footer class="bg-purple text-white py-4">
+    <div class="container-fluid">
+      <div class="row text-center text-md-start align-items-center">
 
+        <div class="col-12 col-md-4 mb-3 mb-md-0 ps-5">
+          <img src="../assets/images/logo-dark.png" class="img-fluid footer-logo" alt="Logo">
+        </div>
+
+        <div class="col-12 col-md-4 mb-1 mb-md-0 text-center">
+          <p class="mb-0">
+            &copy; MegaAttendance Copyright 2026. <br>
+            All Rights Reserved
+          </p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 text-center text-md-end">
+          <div class="d-inline-block text-center">
+            <p class="mb-0">Contact us</p>
+            <p class="mb-0">+234 812 435 3021</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
